@@ -1,147 +1,102 @@
-body {
-	/*font-family: Arial, Hlevetica, sans-serif;
-	font-size: 15px;
-	line-height: 1.5;*/
-	font: 15px/1.5 Arial, Helvetica, sans-serif;
-	padding:0;
-	margin:0;
-	background-color: #ffffff;	
+html, boy {
+      width: 100%
+      height: 100%
+      padding: 0;
+      margin: 0px;
 }
 
-/* Global */
-.container {
-	width: 80%;
-	margin:auto;
-	overflow: hidden;
-	text-align: left;
+slider {
+     display: block;
+     width: 100%;
+     height: 100 %;
+     background-color: #1f1f1f;
+     overflow: hidden;
+     position: absolute;
 }
 
-ul {
-	margin:0;
-	padding:0;
+slider > * {
+    position: absolute;
+     display: block;
+     width: 100%;
+     height: 100 %;
+     background:  #1f1f1f;
+     animation: slide 12s infinite;
+     overflow: hidden;
 }
 
-.button_1{
-		height:38px;
-		background:#87cefa;
-		border:0;
-		padding-left: 20px;
-		padding-right:20px;
-		color:#ffffff;
-}
-/* Header **/
-header{
-	background:	none; /*Hexadecimal for light grey*/
-	padding-top: 30px;
-	min-height: 70px;
-	border-bottom: #87cefa 3px solid;
+slide:n-th child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(/C:/Users/markus_patrick/Desktop/Carousel/Img/thailand.jpg)
+    background-size: cover;
+    background-position: : center;
 }
 
-/* links styling*/
-
-header a {
-	color: 	#000000; /*heaxadecimal for black*/
-	text-decoration:none;
-	text-transform: uppercase;
-	font-size: 16px;
-}
-/*to menu for create the horizontal tab text*/
-
- header li{
-	float:left;
-	display:inline;
-	padding: 0 20px 0 20px;
+slide:n-th child(2) {
+    left: 0%;
+    animation-delay: 2s;
+    background-image: url(/C:/Users/markus_patrick/Desktop/Carousel/Img/singapore.jpg)
+     background-size: cover;
+    background-position: : center;
 }
 
-header #branding {
-	float: left;
-	margin-left: 10px;
+slide:n-th child(3) {
+    left: 0%;
+    animation-delay: 5s;
+    background-image: url(/C:/Users/markus_patrick/Desktop/Carousel/Img/germany.jpg)
+     background-size: cover;
+    background-position: : center;
 }
 
-header #branding h1 {
-	margin:0;
+slide:n-th child(4) {
+    left: 0%;
+    animation-delay: 8s;
+    background-image: url(/C:/Users/markus_patrick/Desktop/Carousel/Img/denmark.jpg)
+    background-size: cover;
+    background-position: : center;
 }
 
-header nav {
-	float:right;
-	margin-top:10px;
-	margin-right: 10px;
+slide:n-th child(5) {
+    left: 0%;
+    animation-delay: 11s;
+    background-image: url(/C:/Users/markus_patrick/Desktop/Carousel/Img/norway.jpg)
+    background-size: cover;
+    background-position: : center;
 }
 
-header .highlight, header .current a{
-	color: #87cefa;
-	font-weight: bold;
+slide:n-th child(6) {
+    left: 0%;
+    animation-delay: 14s;
+    background-image: url(/C:/Users/markus_patrick/Desktop/Carousel/Img/czech republic.jpg)
+    background-size: cover;
+    background-position: : center;
 }
 
-header a:hover{
-	color:#cccccc;
-	font-weight: bold;
+
+slide:n-th child(7) {
+    left: 0%;
+    animation-delay: 17s;
+    background-image: url(austria.jpg)
+    background-size: cover;
+    background-position: : center;
 }
 
-/*showcase*/
-#showcase{
-	min-height: 400px;
-	background:url('../img/background2.jpeg') 0 -400px;
-	text-align:center;
-	color: #ffffff;
+slide p {
+    font-family: Comfortaa;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #fff;
+    
 }
 
-#showcase h1 {
-	margin-top: 100px;
-	font-size:55px;
-	margin-bottom:10px;
-	text-align: center;
-}
-
-#showcase p{
-	font-size:20px;
-	text-align: center;
-}
-
-#newsletter{
-	padding:15px;
-	color:#000000;
-	background: none;	
-}
-
-#newsletter h1{
-	float:left;
-}
-
-#newsletter form{
-	float:right;
-	margin-top: 15px;
-}
-
-#newsletter input[type="email"]{
-	padding:4px;
-	height:25px;
-	width:250px;
-	margin-bottom: 25px;
-	margin-top:0px;
-
-}
-
-/*boxes*/
-#boxes{	
-	margin-top:20px;
-}
-
-#boxes .box {
-	float:left;
-	text-align: center;
-	width:30%;
-	padding:10px;
-}
-
-#boxes .box img {
-	width:90px;
-}
-
-footer{
-	padding:20px;
-	margin-top:20px;
-	color:#ffffff;
-	background-color: #87cefa;
-	text-align: center;
+@keyframes slide {
+    0% {left: 100%; width:100%;}
+    5% {left:0%;}
+    25%{left:0%;}
+    30% {left: -100%; width:100%;}
+    30.000% {left: -100%; width:0;}
+    100% {left:100%; width: 0%;}
 }
